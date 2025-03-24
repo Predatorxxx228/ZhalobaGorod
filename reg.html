@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="imgs/Group 75 (1).ico" type="image/x-icon">
+</head>
+<body class="reg_page">
+    <main class="registM">
+        <div class="form_bl">
+            <form class="form">
+                <p class="reg_tit">Регистрация</p>
+                <div class="input_group"><p class="zvezda">*</p><input class="reg_inp" id="name" type="text" placeholder="Введите Имя..." required></div>
+                <div class="input_group"><p class="zvezda">*</p><input class="reg_inp" id="lastname" type="text" placeholder="Введите Фамилию..." required></div>
+                <div class="input_group"><p class="zvezda">*</p><input class="reg_inp" id="otch" type="text" placeholder="Введите Отчество..." required></div>
+                <div class="input_group"><p class="zvezda">*</p><input class="reg_inp" id="email" type="email" placeholder="Введите email..." required></div>
+                <div class="input_group"><p class="zvezda">*</p><input class="reg_inp" id="tel" type="tel" placeholder="Введите номер телефона (цифры)..." required></div>
+                <div class="input_group"><p class="zvezda">*</p><input class="reg_inp" id="pswd1" type="password" placeholder="Придумайте пароль..." required></div>
+                <div class="input_group"><p class="zvezda">*</p><input class="reg_inp" id="pswd2" type="password" placeholder="Введите пароль ещё раз..." required></div>
+                <button class="regi_but" onclick="validateForm()">Войти</button>
+                
+            </form>
+        </div>
+        <div class="reg_trans"><a href="auth.html" class="link_trans"><p class="haveAcc">У меня уже есть аккаунт</p>(Войти)</a></div>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
